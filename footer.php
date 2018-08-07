@@ -1,5 +1,4 @@
-
-                
+                <div class="clear clearfix"></div>
                 <div class="fullblue">
                 	<div class="">
 	
