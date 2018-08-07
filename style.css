@@ -61,14 +61,43 @@ time, mark, audio, video {
 	vertical-align: baseline;
 
 }
+a {
+    color: #1E9F5C;
+}
+html .page-content a,html .page-full a {
+    color: #1E9F5C;
+}
 html .slider .slides > li {
     min-height: 640px;
     background-size: cover;
 }
+html body .bordertop2px {
+    border-top: #1E9F5C 2px solid;
+}
+html .bookbutton {
+    background: #1E9F5C !important;
+}
+html .bookbutton:hover {
+    background: #26bb6e !important;
+}
+html blockquote {
+    border-color: #1E9F5C;
+}
+html #footer-bottom {
+    background: transparent;
+    color: #ffffff;
+}
+html #footer-bottom a {
+    color: #ffffff;
+}
+html #footer-bottom a:hover {
+    background: transparent;
+    background-color: transparent;
+}
 
 @font-face {
 font-family: Danhostel-Font;
-font-weight: thin;
+font-weight: 300;
 src: url('fonts/ApexSans-Book.eot?#iefix') format("embedded-opentype"); /* IE9 Compact Modes  */
 src: url("fonts/ApexSans-Book.otf") format("opentype"), 
 url('fonts/ApexSans-Book.ttf')  format('truetype'),
@@ -467,11 +496,12 @@ a {
 }
 
 
-#title-wrapper2{
-z-index: 9999;
+#title-wrapper2 {
+    z-index: 9999;
     position: absolute;
-    right: 85px;	
-	top: 5px;
+    right: 85px;
+    top: 50%;
+    margin-top: -20px;
 }
 
 .section.clearfix {
@@ -2415,7 +2445,7 @@ pre {
 
 
 
-..page-full .page-title {
+.page-full .page-title {
 
 	padding: 30px 0;
 }
@@ -4858,7 +4888,7 @@ html .bordertop2px {
     z-index: 99999;
 }
 html .fullblue {
-    background: #fff;
+    background: #1E9F5C;
     box-shadow: none;
 }
 html #navigation{
@@ -5167,6 +5197,18 @@ div#navigation {
 }
 }
 
+@media (max-width: 1350px){
+html .fullwhite .cwrapper980 {
+    background: #1E9F5C;
+}
+}
+
+@media all and (max-width: 1024px){
+html #title-wrapper2 {
+    margin-top: -60px;
+}
+}
+
 @media all and (max-width: 1150px){
 #main-menu > li {
     margin-right: 0px;
@@ -5222,7 +5264,7 @@ html .slider .slides > li {
     min-height: 380px;
 }
 html #navigation {
-    background: #5082B7;
+    background: #1E9F5C;
 }
 .booknow {
     box-shadow: none;
@@ -5256,4 +5298,13 @@ html .flex-caption {
 html .page-content {
     padding: 20px 4% 20px 4%;
 }
+}
+
+
+@media all and (max-width: 399px){
+	html #forretning2{
+		    width: 100px;
+    height: initial;
+    margin-top: 10px;
+	}
 }
